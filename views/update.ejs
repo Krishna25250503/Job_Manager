@@ -1,0 +1,41 @@
+<%- include('partials/header')%>
+<!--  -->
+<%- include('partials/nav')%>
+<form class="m-auto w-25 mt-5" action="/update/<%= user._id%>" method="post">
+  <h1 class="mb-4 text-success">Update Details</h1>
+  <hr />
+
+  <input
+    class="form-control mb-3"
+    type="email"
+    placeholder="example@gmail.com"
+    name="email"
+    value="<%= user.email%>"
+  />
+  <input
+    class="form-control mb-3"
+    type="password"
+    placeholder="********"
+    name="password"
+    required
+  />
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" required />
+    <label class="form-check-label" for="exampleCheck1" >Check me out</label>
+  </div>
+  <br />
+  <button class="btn btn-primary w-25">Update</button>
+</form>
+
+
+
+
+<div class="p-3 mb-2 bg-dark text-white">
+  <div class="p-3 mb-2 bg-dark text-white">
+    <div class="p-3 mb-2 bg-dark text-white">
+      <div class="p-3 mb-2 bg-dark text-white">
+        <%- include('partials/footer')%>
+      </div>
+    </div>
+  </div>
+</div>

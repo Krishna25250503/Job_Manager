@@ -1,0 +1,57 @@
+<%- include('partials/header')%>
+<!--  -->
+<%- include('partials/nav')%>
+<form class="m-auto  w-25 mt-5" action="/signup" method="post">
+    <h1 class="mb-4 text-warning">Apply For Job</h1>
+    <input
+        class="form-control mb-4"
+        type="text"
+        placeholder="username"
+        name="username"
+        required
+    />
+    <input
+        class="form-control mb-4"
+        type="email"
+        placeholder="example@gmail.com"
+        name="email"
+        required
+    />
+    <input
+        class="form-control mb-4"
+        type="password"
+        placeholder="********"
+        name="password"
+        required
+    />
+    <input
+        class="form-control mb-4"
+        type="number"
+        placeholder="Expected Slary"
+        name="number"
+        required
+    />
+    
+  <div class="form-group">
+    <label for="exampleFormControlFile1">Upload your resume</label>
+    <input type="file" class="form-control-file" required id="exampleFormControlFile1" />
+  </div>
+  <hr>
+    <button class="btn btn-primary w-25">Create</button>
+    <hr>
+
+    <p>Already have an account ? 
+        <!-- <a href="/signin">signin</a> -->
+        <button class="btn btn-primary w-10 h-15    ">Sign In</button>
+    </p>
+</form>
+
+
+<div class="p-3 mb-2 bg-dark text-white ">
+    <div class="p-3 mb-2 bg-dark text-white ">
+        <div class="p-3 mb-2 bg-dark text-white ">
+            <div class="p-3 mb-2 bg-dark text-white ">
+                <div class="p-3 mb-2 bg-dark text-white ">
+
+
+<%- include('partials/footer')%>
